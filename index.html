@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stuff</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        
+    </head>
+<body>
+    <section id="list">
+        <h2>To Do List</h2>
+        <div id="myList" >
+            <ul id="myUL"></ul>
+        </div>
+        <button id="ButtonPage2" type="button" >Go To Page 2</button>  <br />
+    </section>
+
+    <section id="mouse">
+        <div id = "mouseOver">
+            <h2>Fishing Images</h2>
+            <p >Move mouse over image to change it.</p>
+                <img id="imageRO1" class="center" src="images/hero.jpg" alt="Dice Image">
+                <img id="imageRO2" class="center" src="images/bison.jpg" alt="Dice Image">
+            </p>
+        </div>
+        <button id="ButtonPage3" type="button" >Go To Page 3</button>  <br />
+    </section>
+
+    <section id="game">
+        <div id = "diceGame">
+            <h2> JavaScript Dice Game</h2>
+            <p> You start with $5, each round you either win or lose $1.</p>
+            <img id="imageDG1" src="./images/dice-1.jpg" alt="Dice Image" style="width:50px;height:50px;">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        
+            <img id="imageDG2" src="./images/dice-6.jpg" alt="Dice Image" style="width:50px;height:50px;">
+            <br /><br />
+            <p>
+                Your balance is $<span id="balance">5</span><br />
+                Number of turns <span id="turnCount">0</span>
+            </p>
+            <br />
+            <p>
+                <span id="message"></span>
+            </p>
+            <button id="ButtonBet" type="button" onclick="buttonClicked()">Bet Now</button>  <br />
+        </div>
+    </section>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
